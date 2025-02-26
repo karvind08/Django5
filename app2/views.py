@@ -9,3 +9,6 @@ def app2fun(request):
     #render(request,'template_name',context='Dic_name',content_type='MIME_Type',status=None,using=None)
     #return HttpResponse(html)
     return render(request,'app2/django.html')
+
+def fastapi(request):
+    return render(request,'app2/fastapi.html')
