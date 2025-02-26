@@ -8,7 +8,9 @@ def app2fun(request):
     # syntax of render 
     #render(request,'template_name',context='Dic_name',content_type='MIME_Type',status=None,using=None)
     #return HttpResponse(html)
-    return render(request,'app2/django.html')
+    c1 = {'cname':'Django 5'}
+    return render(request,'app2/django.html',context=c1)
 
 def fastapi(request):
-    return render(request,'app2/fastapi.html')
+    f1 = {'c1':'C++'}
+    return render(request,'app2/fastapi.html',context=f1)
