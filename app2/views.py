@@ -13,5 +13,7 @@ def app2fun(request):
 
 def fastapi(request):
     f1 = {'c1':'C++'}
+    d1 = {'c3':"Streamlit"}
     #return render(request,'app2/fastapi.html',context=f1)
-    return render(request,'app2/fastapi.html',context={'c2':'Python'})
+    #return render(request,'app2/fastapi.html',context={'c2':'Python'})
+    return render(request,'app2/fastapi.html',d1)
