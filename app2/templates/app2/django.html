@@ -1,12 +1,15 @@
+{%load static%}
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document of Django 5</title>
+    <link rel="stylesheet" href="{% static 'app2/css/style.css' %}" />
   </head>
   <body>
     <h1>Hello Using Templates</h1>
     <h2>I am learning {{cname}}</h2>
+    <img src="{% static 'app2/images/git.png' %}" alt="Git" width="500" />
   </body>
 </html>
