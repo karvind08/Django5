@@ -1,11 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <h1>Show Page</h1>
-  </body>
-</html>
+{%extends 'app1/header.html'%}
+<title>{% block title %} Show {% endblock title %}</title>
+{%block content%}
+<h2>Menu Section</h2>
+<h3>Show Page</h3>
+{%endblock content%}
