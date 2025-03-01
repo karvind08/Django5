@@ -1,5 +1,6 @@
 {%load static%}
 <!DOCTYPE html>
+{%load static%}
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -8,7 +9,7 @@
     <title>{% block title %} {% endblock title %}</title>
   </head>
   <body>
-    {%block content%} {%endblock content%} 
-    {% block hero%} {% endblock hero%}
+    {%block content%} {%endblock content%} {% block hero%} {% endblock hero%}
+    {%block footer%} This is header footer {% endblock footer%}
   </body>
 </html>
