@@ -1,10 +1,15 @@
 {%extends 'app1/header.html'%}
 <title>{% block title %} Django {% endblock title %}</title>
 {%block content%}
-<h3>Django Page - App2</h3>
-<h2>Menu Section</h2>
-<h1>Hello Using Templates</h1>
-<h2>I am learning {{cname}}</h2>
-{%endblock content%} {% block hero%}
-<h2>This is hero Block</h2>
-{% endblock hero%} {% block footer%} Footer at Django Page {% endblock footer%}
+<div class="container-fluid">
+  <br />
+  <br />
+  <br />
+  <h3>Django Page - App2</h3>
+  <h2>Menu Section</h2>
+  <h1>Hello Using Templates</h1>
+  <h2>I am learning {{cname}}</h2>
+</div>
+
+{%endblock content%} {% block hero%} {% endblock hero%} {% block footer%} Footer
+at Django Page {% endblock footer%}

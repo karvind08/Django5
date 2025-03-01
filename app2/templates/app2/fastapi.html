@@ -1,17 +1,10 @@
-{%load static%}
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="{%static 'app2/css/style.css'%}" />
-    <title>Document of FastAPI</title>
-  </head>
-  <body>
-    <h2>FastAPI Example</h2>
-    <p>This is sample page for FastAPI</p>
-    <p>{{c1}}</p>
-    <p>{{c2}}</p>
-    <p>{{c3}}</p>
-  </body>
-</html>
+{%extends 'app1/header.html'%} {%block content%}
+<br />
+<br />
+<br />
+<h2>FastAPI Example</h2>
+<p>This is sample page for FastAPI</p>
+<p>{{c1}}</p>
+<p>{{c2}}</p>
+<p>{{c3}}</p>
+{%endblock content%}
