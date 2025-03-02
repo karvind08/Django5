@@ -2,3 +2,9 @@ body
 {
   background-color: rgb(236, 233, 231);
 }
+h3 {
+  margin-top: 500px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px;
+}
