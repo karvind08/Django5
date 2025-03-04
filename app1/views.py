@@ -13,3 +13,8 @@ def alldata(request):
     data = Profile.objects.all()
     print(data)
     return render(request,'app1/all-data.html',{'data':data})
+
+def singledata(request):
+    data1= Profile.objects.get(id=0)
+    print(data1)
+    return render(request,'app1/single.html',{'data1':data1})

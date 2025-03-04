@@ -4,5 +4,6 @@ urlpatterns = [
     path('show/',views.show,name='show'),
     path('home/',views.home,name='home'),
     path('alldata',views.alldata,name='alldata'),
+    path('single',views.singledata,name='single'),
     
 ]
