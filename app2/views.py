@@ -1,5 +1,5 @@
 from django.shortcuts import render
-
+from app2.forms import Registeration
 # Create your views here.
 
 def app2fun(request):
@@ -17,3 +17,7 @@ def fastapi(request):
     #return render(request,'app2/fastapi.html',context=f1)
     #return render(request,'app2/fastapi.html',context={'c2':'Python'})
     return render(request,'app2/fastapi.html',d1)
+
+def register(request):
+    fm = Registeration()
+    return render(request,'app2/register.html',{'form':fm})
