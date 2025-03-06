@@ -6,4 +6,5 @@ urlpatterns = [
     path('app2fun/',views.app2fun,name='appfun'),  
     path('fastapi/',views.fastapi,name='fastapi'),
     path('register/',views.register,name='register'),
+    path('login/',views.login,name='login'),
 ]

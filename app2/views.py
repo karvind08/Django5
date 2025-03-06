@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from app2.forms import Registeration
+from app2.forms import Registeration,Login
 # Create your views here.
 
 def app2fun(request):
@@ -21,3 +21,9 @@ def fastapi(request):
 def register(request):
     fm = Registeration()
     return render(request,'app2/register.html',{'form':fm})
+
+def login(request):
+    #fm = Login(auto_id='arv_%s')
+    #fm = Login(auto_id=True)
+    fm = Login(auto_id=False)
+    return render(request,'app2/login.html',{'form':fm})
