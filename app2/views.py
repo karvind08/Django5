@@ -18,9 +18,14 @@ def fastapi(request):
     #return render(request,'app2/fastapi.html',context={'c2':'Python'})
     return render(request,'app2/fastapi.html',d1)
 
+#def register(request):
+#    fm = Registeration()
+#    return render(request,'app2/register.html',{'form':fm})
+
 def register(request):
-    fm = Registeration()
+    fm = Registeration(field_order=['city','email','first_name','last_name'])
     return render(request,'app2/register.html',{'form':fm})
+
 
 def login(request):
     #fm = Login(auto_id='arv_%s')
